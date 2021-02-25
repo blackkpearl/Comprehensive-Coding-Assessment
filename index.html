@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Coding Assessment</title>
+
+    <link rel="styesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Highscores -->
+    <div class="scores"><a href="highscores.html">View Highscores</a> </div>
+
+    <!-- Timer -->
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code-related questions within the given time limit.
+                Keep in mind that the incorrect answer will penalize your score/time by ten seconds!
+            </p>
+            <button id="start">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>
+                Enter initials: <input type="text" id="initials" max="5" />
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+
+        <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <!-- Script -->
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
+</body>
+
+</html>
