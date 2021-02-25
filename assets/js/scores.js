@@ -5,7 +5,7 @@ function printHighscores() {
     // Sorts scores from highest to lowest
     highscores.sort(function (a, b) {
         return b.score - a.score;
-    }):
+    })
 
     // Creates li tag for each high score 
     highscores.forEach(function (score) {
