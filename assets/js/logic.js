@@ -22,7 +22,7 @@ function startQuiz() {
 
     questionsEl.removeAttribute("class");
 
-    timerId = setInterval(clock, 1000);
+    timerId = setInterval(clockTick, 1000);
 
     timerEl.textContent = time;
 
@@ -32,7 +32,7 @@ function startQuiz() {
 function getQuestion() {
     var currenQuestion = questions[currentQuestionIndex];
     var titleEl = document.getElementById("question-title");
-    title.El.textContent = currentQuestion.title;
+    titleEl.textContent = currentQuestion.title;
 
     // Clears out last question choices
     choicesEl.innerHTML = "";
